@@ -1,4 +1,4 @@
-FROM elixir:1.5.3-slim AS common
+FROM elixir:1.6.0-slim AS common
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv ACCC4CF8 && \
     echo "deb http://deb.debian.org/debian jessie-backports main contrib non-free" > /etc/apt/sources.list.d/backports.list && \
